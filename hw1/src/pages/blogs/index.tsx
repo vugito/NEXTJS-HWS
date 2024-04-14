@@ -1,9 +1,11 @@
 import React from 'react';
 import {blogsData} from "../../../lib/data";
 import Link from "next/link";
-import BlogCard from "@/components/BlogCard";
-import styles from "@/pages/blogs/Blogs.module.css";
+import BlogCard from "../../components/BlogCard";
+import styles from "./Blogs.module.css";
 import Head from "next/head";
+
+
 const Blogs = () => {
     return (
         <>
@@ -20,7 +22,7 @@ const Blogs = () => {
 
                 <h2>Blogs list</h2>
 
-                <div className={styles.listСontainer}>
+                <div className={styles.listContainer}>
                     <ul className={styles.list}>
                         {blogsData.map((blog: any) => (
                             <Link key={blog.id} href={`/blogs/${blog.id}`}>

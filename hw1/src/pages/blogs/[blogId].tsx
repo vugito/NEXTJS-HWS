@@ -2,7 +2,7 @@ import React from 'react';
 import {useRouter} from "next/router";
 import Head from "next/head";
 import {blogsData} from "../../../lib/data";
-import styles from "@/pages/blogs/Blogs.module.css";
+import styles from "./Blogs.module.css";
 import Link from "next/link";
 
 const BlogDetails = () => {
@@ -14,11 +14,7 @@ const BlogDetails = () => {
         if (blogIndex !== -1) {
             const blog = blogsData[blogIndex];
             return (
-                <div style={{
-                    display: "flex",
-                    flexDirection: 'column',
-                    gap: '10px'
-                }}>
+                <div className={styles.blog}>
                     <h3>Blog Number - {query.blogId}</h3>
                     <h4>Title: {blog.title}</h4>
                     <p>{blog.body}</p>

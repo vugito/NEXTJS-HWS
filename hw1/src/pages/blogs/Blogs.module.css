@@ -19,7 +19,7 @@
     font-weight: 500;
 }
 
-.listСontainer {
+.listContainer {
     overflow: auto;
     height: 100%;
     /*background-color: red;*/
@@ -42,6 +42,12 @@
     /*justify-content: center;*/
     flex-direction: column;
     /*background-color: red;*/
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .backButton {
