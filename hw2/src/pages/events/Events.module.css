@@ -1,0 +1,42 @@
+.container {
+    flex: 1;
+    overflow-y: auto;
+    max-height: 35vh;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.table {
+    flex: 1;
+    overflow-y: auto;
+    width: 100%;
+    border-color: red;
+}
+.table > thead {
+    vertical-align: bottom;
+}
+.table > tbody {
+    vertical-align: inherit;
+}
+
+.thead {
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    border: 2px solid blue;
+}
+
+.tr {
+    /*justify-content: space-between;*/
+    border: 2px solid blue;
+}
+
+.td {
+    padding: 10px;
+    border: 2px solid blue;
+}
+
+.th {
+    padding: 10px;
+    border: 2px solid blue;
+}

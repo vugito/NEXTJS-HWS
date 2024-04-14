@@ -15,99 +15,50 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
-        <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>src/pages/index.tsx</code>
-          </p>
-          <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{" "}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
-            </a>
+        <div className={styles.container}>
+          <header>
+            <h1 className={`${inter.className}`}>Это главная страница для ДЗ 2</h1>
+          </header>
+          <div className={styles.tasksContainer}>
+            <h2>Задача:</h2>
+            <h3>Динамические страницы и Вложенные маршруты:</h3>
+            <ol>
+              <li>Создайте раздел Events в вашем проекте.</li>
+              <li>Добавьте список ивентов</li>
+              <li>Реализуйте динамическую страницу для каждого события, используя [eventId].tsx.</li>
+              <li>Добавьте вложенные маршруты для фотографий события, используя [eventId]/photos/[photoId].tsx.</li>
+              <li>Добавьте переход на EventDetails при клике на один ивент.</li>
+            </ol>
+            <h3>Обработка ошибок:</h3>
+            <ol>
+              <li>Реализуйте страницу 404 с использованием файла not-found.tsx.</li>
+              <li>Добавьте логику на странице 404 для перенаправления на главную страницу после некоторого времени.</li>
+            </ol>
+
+            <h3>Программная навигация:</h3>
+            <ol>
+              <li>Используйте router.push() для программного перехода между страницами.</li>
+            </ol>
+
+            <h3>Множественные параметры:</h3>
+            <ol>
+              <li>Исследуйте возможности множественных параметров с помощью [...params].tsx.</li>
+            </ol>
+
           </div>
         </div>
+        {/*<div className={styles.center}>*/}
+        {/*  <Image*/}
+        {/*    className={styles.logo}*/}
+        {/*    src="/next.svg"*/}
+        {/*    alt="Next.js Logo"*/}
+        {/*    width={180}*/}
+        {/*    height={37}*/}
+        {/*    priority*/}
+        {/*  />*/}
+        {/*</div>*/}
 
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-        </div>
 
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
-        </div>
       </main>
     </>
   );

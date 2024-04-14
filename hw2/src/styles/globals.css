@@ -100,6 +100,11 @@ a {
   text-decoration: none;
 }
 
+table {
+  caption-side: bottom;
+  border-collapse: collapse;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
