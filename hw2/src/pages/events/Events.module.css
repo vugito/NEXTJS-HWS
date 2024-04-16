@@ -1,7 +1,18 @@
+.main {
+    width: 100%;
+    height: 100%;
+    /*border: 2px solid red;*/
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: auto;
+}
+
 .container {
     flex: 1;
     overflow-y: auto;
-    max-height: 35vh;
+    /*max-height: 35vh;*/
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -11,11 +22,14 @@
     flex: 1;
     overflow-y: auto;
     width: 100%;
-    border-color: red;
+    /*border-color: red;*/
+    max-height: 35vh;
 }
+
 .table > thead {
     vertical-align: bottom;
 }
+
 .table > tbody {
     vertical-align: inherit;
 }
@@ -23,20 +37,31 @@
 .thead {
     /*display: flex;*/
     /*justify-content: space-between;*/
-    border: 2px solid blue;
+    /*border: 2px solid blue;*/
+
 }
 
 .tr {
     /*justify-content: space-between;*/
-    border: 2px solid blue;
+    /*border: 2px solid blue;*/
+
 }
 
 .td {
     padding: 10px;
-    border: 2px solid blue;
+    /*border: 2px solid blue;*/
 }
 
 .th {
     padding: 10px;
-    border: 2px solid blue;
+    border: 2px solid #b1bfbf;
+    /*border: 2px solid blue;*/
+}
+
+.eventsContainer {
+    display: inline-grid;
+    justify-content: space-around;
+    grid-template-columns: auto auto auto auto auto;
+    width: 100%;
+    /*border: 2px solid blue;*/
 }
